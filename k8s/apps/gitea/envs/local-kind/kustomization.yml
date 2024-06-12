@@ -6,3 +6,6 @@ namePrefix: local-
 
 resources:
 - ../../base
+
+patchesStrategicMerge:
+- ingress.yml
