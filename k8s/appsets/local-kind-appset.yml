@@ -8,7 +8,7 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
   - git:
-      repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
+      repoURL: https://github.com/ck99/argocd-codefresh-test.git
       revision: HEAD
       directories:
       - path: k8s/apps/*/envs/local-kind
@@ -21,7 +21,7 @@ spec:
 
       # Source of the application manifests
       source:
-        repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
+        repoURL: https://github.com/ck99/argocd-codefresh-test.git
         targetRevision: HEAD
         path: '{{.path.path}}'
       
